@@ -1,0 +1,148 @@
+
+.ultm-to-circle, 
+.ultm-to-square, 
+.ultm-to-square-no-radius {
+	-o-transition: all .2s;
+	-moz-transition: all .2s;
+	-webkit-transition: all .2s;
+	-ms-transition: all .2s;
+	transition: all .2s;
+}
+
+/* Circle on hover */
+.ultm-64.ultm-to-circle:hover {
+	-moz-border-radius: 34px;
+	-webkit-border-radius: 34px;
+	border-radius: 34px;
+}
+
+.ultm-48.ultm-to-circle:hover {
+	-moz-border-radius: 26px;
+	-webkit-border-radius: 26px;
+	border-radius: 26px;
+}
+
+.ultm-32.ultm-to-circle:hover {
+	-moz-border-radius: 18px;
+	-webkit-border-radius: 18px;
+	border-radius: 18px;
+}
+
+/* Square on hover */
+.ultm-64.ultm-to-square:hover {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.ultm-48.ultm-to-square:hover {
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.ultm-32.ultm-to-square:hover {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+/* Square without border radius on hover */
+.ultm-64.ultm-to-square-no-radius:hover, 
+.ultm-48.ultm-to-square-no-radius:hover, 
+.ultm-32.ultm-to-square-no-radius:hover {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+/* Rotate on hover */
+.ultm-rotate:hover {
+	-webkit-animation-name: rotate;
+	-webkit-animation-duration: .4s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-name: rotate;
+	-moz-animation-duration: .4s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-timing-function: linear;
+	-ms-animation-name: rotate;
+	-ms-animation-duration: .4s;
+	-ms-animation-iteration-count: 1;
+	-ms-animation-timing-function: linear;
+	animation-name: rotate;
+	animation-duration: .4s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+
+@-ms-keyframes rotate {
+	from { -ms-transform: rotate(0deg); }
+	to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes rotate {
+	from { -moz-transform: rotate(0deg); }
+	to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes rotate {
+	from { -webkit-transform: rotate(0deg); }
+	to { -webkit-transform: rotate(360deg); }
+}
+@keyframes rotate {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+/* Rotate on hover 2 */
+.ultm-rotate-2 {
+	-o-transition: all .4s;
+	-moz-transition: all .4s;
+	-webkit-transition: all .4s;
+	-ms-transition: all .4s;
+	transition: all .4s;
+}
+
+.ultm-rotate-2:hover {
+	-ms-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+/* Move up/down on hover */
+.ultm-move-up, 
+.ultm-move-down {
+	position: relative;
+	-o-transition: all .2s;
+	-moz-transition: all .2s;
+	-webkit-transition: all .2s;
+	-ms-transition: all .2s;
+	transition: all .2s;
+}
+
+.ultm-move-up:hover { top: -5px; }
+.ultm-move-down:hover { top: 5px; }
+
+/* Gray to colored on hover */
+.ultm-gray-to-color {
+	background-color: #888;
+	-o-transition: all .2s;
+	-moz-transition: all .2s;
+	-webkit-transition: all .2s;
+	-ms-transition: all .2s;
+	transition: all .2s;
+}
+
+/* Colored to gray on hover */
+.ultm-color-to-gray {
+	-o-transition: all .2s;
+	-moz-transition: all .2s;
+	-webkit-transition: all .2s;
+	-ms-transition: all .2s;
+	transition: all .2s;
+}
+
+.ultm-color-to-gray:hover {
+	background-color: #888;
+}
+

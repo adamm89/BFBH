@@ -1,0 +1,152 @@
+
+.ultm-tooltip {
+	position: relative;
+	font-size: 14px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.ultm-tooltip:after {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	width: 100px;
+	padding: 8px 10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	z-index: 98;
+}
+.ultm-tooltip:hover:after { visibility: visible; opacity: 1; }
+
+.ultm-tooltip:before {
+	content: "";
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	border: solid;
+	border-width: 6px 6px 0 6px;
+    z-index: 99;
+}
+.ultm-tooltip:hover:before { visibility: visible; opacity: 1; }
+
+/* Tooltip position */
+/* size 64 pixels */
+.ultm-64.ultm-tooltip:after { bottom: 80px; left: -28px; }
+.ultm-64.ultm-tooltip:before { bottom: 74px; left: 26px; }
+/* size 48 pixels */
+.ultm-48.ultm-tooltip:after { bottom: 64px; left: -36px; }
+.ultm-48.ultm-tooltip:before { bottom: 58px; left: 18px; }
+/* size 32 pixels */
+.ultm-32.ultm-tooltip:after { bottom: 48px; left: -44px; }
+.ultm-32.ultm-tooltip:before { bottom: 42px; left: 10px; }
+
+/* Tooltip transition */
+.ultm-tooltip:after, 
+.ultm-tooltip:before {
+	-o-transition: all .3s;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-ms-transition: all .3s;
+	transition: all .3s;
+}
+
+/* Tooltip graphic */
+/* dark tooltip */
+.ultm-tooltip-dark {
+	color: #fff;
+}
+.ultm-tooltip-dark:after {
+	background: #4d4d4d;
+}
+.ultm-tooltip-dark:before {
+	border-color: #4d4d4d transparent;
+}
+/* light tooltip */
+.ultm-tooltip-light {
+	color: #4d4d4d;
+}
+.ultm-tooltip-light:after {
+	background: #eee;
+}
+.ultm-tooltip-light:before {
+	border-color: #eee transparent;
+}
+
+/* Tooltip text */
+.ultm-twitter.ultm-tooltip:after { content: "Twitter"; }
+.ultm-rss.ultm-tooltip:after { content: "RSS"; }
+.ultm-facebook.ultm-tooltip:after { content: "Facebook"; }
+.ultm-dribbble.ultm-tooltip:after { content: "Dribbble"; }
+.ultm-vimeo.ultm-tooltip:after { content: "Vimeo"; }
+.ultm-pinterest.ultm-tooltip:after { content: "Pinterest"; }
+.ultm-instagram-1.ultm-tooltip:after { content: "Instagram"; }
+.ultm-instagram-2.ultm-tooltip:after { content: "Instagram"; }
+.ultm-linkedin.ultm-tooltip:after { content: "Linkedin"; }
+.ultm-evernote.ultm-tooltip:after { content: "Evernote"; }
+.ultm-youtube-1.ultm-tooltip:after { content: "YouTube"; }
+.ultm-youtube-2.ultm-tooltip:after { content: "YouTube"; }
+.ultm-forrst.ultm-tooltip:after { content: "Forrst"; }
+.ultm-skype.ultm-tooltip:after { content: "Skype"; }
+.ultm-flickr-1.ultm-tooltip:after { content: "Flickr"; }
+.ultm-flickr-2.ultm-tooltip:after { content: "Flickr"; }
+.ultm-flickr-3.ultm-tooltip:after { content: "Flickr"; }
+.ultm-windows.ultm-tooltip:after { content: "Windows"; }
+.ultm-bing.ultm-tooltip:after { content: "Bing"; }
+.ultm-delicious.ultm-tooltip:after { content: "Delicious"; }
+.ultm-myspace-1.ultm-tooltip:after { content: "MySpace"; }
+.ultm-myspace-2.ultm-tooltip:after { content: "MySpace"; }
+.ultm-google-plus-1.ultm-tooltip:after { content: "Google Plus"; }
+.ultm-google-plus-2.ultm-tooltip:after { content: "Google Plus"; }
+.ultm-google.ultm-tooltip:after { content: "Google"; }
+.ultm-whatsapp.ultm-tooltip:after { content: "Whatsapp"; }
+.ultm-digg-1.ultm-tooltip:after { content: "Digg"; }
+.ultm-digg-2.ultm-tooltip:after { content: "Digg"; }
+.ultm-deviantart.ultm-tooltip:after { content: "Deviantart"; }
+.ultm-reddit.ultm-tooltip:after { content: "Reddit"; }
+.ultm-orkut.ultm-tooltip:after { content: "Orkut"; }
+.ultm-icq.ultm-tooltip:after { content: "ICQ"; }
+.ultm-viddler.ultm-tooltip:after { content: "Viddler"; }
+.ultm-wordpress.ultm-tooltip:after { content: "WordPress"; }
+.ultm-lastfm.ultm-tooltip:after { content: "Lastfm"; }
+.ultm-paypal.ultm-tooltip:after { content: "PayPal"; }
+.ultm-github-1.ultm-tooltip:after { content: "GitHub"; }
+.ultm-github-2.ultm-tooltip:after { content: "GitHub"; }
+.ultm-stumbleupon.ultm-tooltip:after { content: "StumbleUpon"; }
+.ultm-slashdot.ultm-tooltip:after { content: "Slashdot"; }
+.ultm-behance.ultm-tooltip:after { content: "Behance"; }
+.ultm-addthis.ultm-tooltip:after { content: "AddThis"; }
+.ultm-tumblr.ultm-tooltip:after { content: "Tumblr"; }
+.ultm-technorati.ultm-tooltip:after { content: "Technorati"; }
+.ultm-twitter-2.ultm-tooltip:after { content: "Twitter"; }
+.ultm-feedburner-1.ultm-tooltip:after { content: "FeedBurner"; }
+.ultm-feedburner-2.ultm-tooltip:after { content: "FeedBurner"; }
+.ultm-google-play.ultm-tooltip:after { content: "Google Play"; }
+.ultm-android.ultm-tooltip:after { content: "Android"; }
+.ultm-yelp.ultm-tooltip:after { content: "Yelp"; }
+.ultm-sharethis.ultm-tooltip:after { content: "ShareThis"; }
+.ultm-apple.ultm-tooltip:after { content: "Apple"; }
+.ultm-yahoo.ultm-tooltip:after { content: "Yahoo"; }
+.ultm-email-1.ultm-tooltip:after { content: "Email"; }
+.ultm-email-2.ultm-tooltip:after { content: "Email"; }
+.ultm-blogger.ultm-tooltip:after { content: "Blogger"; }
+.ultm-drupal.ultm-tooltip:after { content: "Drupal"; }
+.ultm-bitcoin.ultm-tooltip:after { content: "Bitcoin"; }
+.ultm-friendfeed.ultm-tooltip:after { content: "FriendFeed"; }
+.ultm-xing.ultm-tooltip:after { content: "XING"; }
+.ultm-aim.ultm-tooltip:after { content: "AIM"; }
+.ultm-stackoverflow.ultm-tooltip:after { content: "Stack Overflow"; }
+.ultm-netvibes.ultm-tooltip:after { content: "Netvibes"; }
+.ultm-qik.ultm-tooltip:after { content: "Qik"; }
+.ultm-newsvine.ultm-tooltip:after { content: "Newsvine"; }
+.ultm-google-chrome.ultm-tooltip:after { content: "Google Chrome"; }
+.ultm-mozilla-firefox.ultm-tooltip:after { content: "Mozilla Firefox"; }
+.ultm-internet-explorer.ultm-tooltip:after { content: "Internet Explorer"; }
+.ultm-opera.ultm-tooltip:after { content: "Opera"; }
+.ultm-safari.ultm-tooltip:after { content: "Safari"; }
+.ultm-ebay-1.ultm-tooltip:after { content: "eBay"; }
+.ultm-ebay-2.ultm-tooltip:after { content: "eBay"; }
+.ultm-tripadvisor-1.ultm-tooltip:after { content: "TripAdvisor"; }
+.ultm-tripadvisor-2.ultm-tooltip:after { content: "TripAdvisor"; }
+.ultm-foursquare.ultm-tooltip:after { content: "Foursquare"; }
+
